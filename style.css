@@ -84,6 +84,7 @@ img {
 
 #one ul{
     display: flex;
+    list-style: none;
 }
 
 #one img {
@@ -101,8 +102,7 @@ img {
     margin-left: 50px;
 }
 #two p {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -114,6 +114,5 @@ img {
     margin-left: 50px;
 }
 #three p {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
