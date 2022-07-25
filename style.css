@@ -1,0 +1,119 @@
+/* 全ての要素を対象とする */
+*, *::before, *::after {
+    margin: 0; /* 外部余白のリセット */
+    padding: 0; /* 内部余白のリセット */
+    box-sizing: border-box; /* widthやheightなどのサイズ指定をボーダーを含んだサイズで指定できるように変更 */
+  }
+  
+  /* Webページ全体の設定を記載 */
+  :root { /* htmlを指定した場合と同じような意味合いです */
+    /* 書体の設定 */
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    /* 日本語の字詰を自動カーニングするように設定 */
+    font-feature-settings: "palt";
+    /* 標準の文字サイズを指定 */
+    font-size: 16pt;
+  }
+
+  
+
+  header .container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.global-nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+.global-nav > .container {
+    display: flex;
+}
+.global-nav > .container h1 {
+    flex: 1;
+}
+
+.global-nav > .container nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.global-nav > .container nav > ul li {
+    line-height: 3em;
+    padding: 0 0.5em;
+    list-style: none;
+    
+}
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+img {
+    width: 100%;
+}
+
+#Profile h2 {
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+#Profile img {
+    width: 100%;
+}
+
+#one {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#one h2 {
+    margin-left: 50px;
+}
+
+#one ul{
+    display: flex;
+}
+
+#one img {
+    width: 480px;
+    height: 260px;
+}
+
+
+
+#two {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#two h2 {
+    margin-left: 50px;
+}
+#two p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#three {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#three h2{
+    margin-left: 50px;
+}
+#three p {
+    margin-left: auto;
+    margin-right: auto;
+}
